@@ -8,7 +8,10 @@
 
 >## CSS
 >### Global Style 
->#### 1. Change style of scrollbar with these properities :
+>#### 1. How to display the main contents of the dashboard
+>#### 2. Change style of scrollbar with these properities :
 > ```::-webkit-scrollbar```
 > ```::-webkit-scrollbar-track```
 > ```::-webkit-scrollbar-thumb```
+> ### Dashboard page Style
+> #### 1. To make 2 small divs that are styling with flex and have different width  to fill main div : ---- > we use fix width in one and another one we use ```Flex : 1```
