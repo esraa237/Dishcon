@@ -16,6 +16,9 @@
 .justify-between{
     justify-content: space-between;
 }
+.f-wrap{
+    flex-wrap: wrap;
+}
 .d-grid{
     display: grid;
 }
@@ -62,6 +65,9 @@
 .mt-10{
     margin-top: 10px;
 }
+.mb-10{
+    margin-bottom: 10px;
+}
 .mt-20{
     margin-top: 20px;
 }
@@ -80,14 +86,32 @@
 .bg-blue{
     background-color: var(--blue-color);
 }
+.bg-orange{
+    background-color: var(--orange-color);
+}
+.bg-green{
+    background-color: var(--green-color);
+}
+.c-blue{
+    color: var(--blue-color);
+}
 .c-black{
     color: black;
+}
+.c-green{
+    color: var(--green-color);
+}
+.c-orange{
+    color: var(--orange-color);
 }
 .c-gray{
     color:var(--grey-color);
 }
 .c-white{
     color:white;
+}
+.c-red{
+    color:var(--red-color);
 }
 /* End Color  */
 /* Start Position */
@@ -99,16 +123,25 @@
 .text-c{
     text-align: center;
 }
+.fs-13{
+    font-size: 13px;
+}
 .fs-14{
     font-size: 14px;
 }
 .fs-15{
     font-size: 15px;
 }
+.fs-25{
+    font-size: 25px;
+}
 @media(max-width: 767px){
     .txt-c-mobile{
         text-align: center;
     }
+}
+.fw-bold{
+    font-weight:bold;
 }
 /* End Font  */
 /*Start width*/
@@ -160,6 +193,11 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
+}
+.flex-center{
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 .btn-shape{
     padding:5px 10px;

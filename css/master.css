@@ -277,4 +277,76 @@ overflow: hidden;
     background-color: var(--blue-alt-color);
 }
 /* End Quick */
+/* Start target */
+.target .target-row .icon{
+   width:80px;
+   height:80px;
+   margin-right: 15px;
+}
+.target .target-row .details{
+    flex:1;
+}
+.target .target-row .progress{
+    height: 4px;
+}
+.target .target-row .progress>span{
+    position: absolute;
+    left:0;
+    top:0;
+    height: 100%;
+}
+.target .target-row .progress>span span{
+    position: absolute;
+    bottom:16px;
+    left:95%;
+    padding: 2px 5px;
+    font-size: 13px;
+}
+.target .target-row .progress>span span::after{
+    content: "";
+    width:0px;
+    height: 0px;
+    border: 7px solid ;
+    border-color: transparent;
+    position: absolute;
+    bottom: -13px;
+    left:50%;
+    transform: translateX(-50%);
+    -webkit-transform: translateX(-50%);
+    -moz-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    -o-transform: translateX(-50%);
+}
+.target .target-row .progress>.blue span::after{
+    border-top-color:var(--blue-color);
+}
+.target .target-row .progress>.orange span::after{
+    border-top-color:var(--orange-color);
+}
+.target .target-row .progress>.green span::after{
+    border-top-color:var(--green-color);
+}
+.blue .icon,
+.blue .progress{
+    background-color: rgba(0, 119, 255, 0.2);
+}
+.green .icon,
+.green .progress{
+    background-color: hwb(142 13% 23% / 0.2);
+}
+.orange .icon,
+.orange .progress{
+    background-color: hsla(37, 92%, 50%, 0.2);
+}
+/* End target */
+/* start ticket  */
+.tickets .box{
+    width:calc(50% - 10px);
+}
+@media (max-width: 767px){
+    .tickets .box{
+        width: 100%;
+    }
+}
+/* End ticket  */
 /* End Content  */
