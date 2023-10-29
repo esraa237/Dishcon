@@ -349,4 +349,31 @@ overflow: hidden;
     }
 }
 /* End ticket  */
+/* Start news */ 
+.news .news-row:not(:last-child){
+    padding-bottom:15px;
+    border-bottom:1px solid #eee ; 
+}
+
+.news .news-row img{
+    margin-right: 20px;
+    width:100px;
+}
+.news .news-row>p{
+    padding:5px 10px;
+}
+@media(max-width: 767px){
+    .news .news-row{
+        flex-direction: column;
+    }
+    .news .news-row .content{
+        flex-direction: column;
+    }
+    .news .news-row img{
+        margin-bottom: 10px;
+    }
+}
+
+
+/* End news */
 /* End Content  */

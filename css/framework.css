@@ -83,6 +83,9 @@
 .bg-eee{
     background-color: #eee;
 }
+.bg-grey{
+    background-color: var(--grey-color);
+}
 .bg-blue{
     background-color: var(--blue-color);
 }
@@ -131,6 +134,9 @@
 }
 .fs-15{
     font-size: 15px;
+}
+.fs-17{
+    font-size: 17px;
 }
 .fs-25{
     font-size: 25px;
