@@ -17,4 +17,5 @@
 > ```::-webkit-scrollbar-thumb```
 > ### Dashboard Page Style
 > #### 1. To make 2 small divs that are styling with flex and have different width  to fill main div : ---- > we use fix width in one and another one we use ```Flex : 1```
-> 
+> #### 2. Styling part For before pseudo of (Last project Widget)--> Use outline,border to make that shape 
+> #### 3. Project Table Style has many information
