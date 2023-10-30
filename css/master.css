@@ -18,18 +18,18 @@ body{
     outline:none;
 }
 ::-webkit-scrollbar{
-    width:10px;
+    width:15px;
 }
 ::-webkit-scrollbar-track{
     background-color: white;
 }
 ::-webkit-scrollbar-thumb{
-    border-radius: 10px;
+    border-radius: 6px;
     background-color: var(--blue-color);
-    -webkit-border-radius: 10px;
-    -moz-border-radius: 10px;
-    -ms-border-radius: 10px;
-    -o-border-radius: 10px;
+    -webkit-border-radius: 6px;
+    -moz-border-radius: 6px;
+    -ms-border-radius: 6px;
+    -o-border-radius: 6px;
 }
 ::-webkit-scrollbar-thumb:hover{
     background-color: var(--blue-alt-color);
@@ -353,7 +353,6 @@ overflow: hidden;
 .news .news-row:not(:last-child){
     padding-bottom:15px;
     border-bottom:1px solid #eee ; 
-    margin-bottom: 15px;
 }
 .news .news-row img{
     margin-right: 20px;
@@ -377,7 +376,7 @@ overflow: hidden;
 /* End news */
 /* Start Tasks */
 .tasks .task-row:not(:last-child){
-    margin-bottom:15px;
+    margin-bottom: 10px;
     border-bottom:1px solid #eee ; 
 }
 .tasks .done{
@@ -399,4 +398,239 @@ overflow: hidden;
     cursor: pointer;
 }
 /* End Tasks */
+/* Start upload  */
+.upload .upload-item:not(:last-child){
+    border-bottom:1px solid #eee ;
+}
+.upload .upload-item img{
+    width:40px;
+    margin-right: 10px;
+}
+.upload .upload-item .info{
+    flex-grow:1;
+}
+/* End upload  */
+/* Start project */
+
+.last-project .project-rows::before{
+    content:"";
+    width:2px;
+    height:100%;
+    background-color: var(--blue-color);
+    position: absolute;
+    left:11px;
+    top:0;
+}
+.last-project .project-rows .row::before{
+    content:"";
+    display: block;
+    margin-right: 15px;
+    width:20px;
+    height:20px;
+    border-radius:50%;
+    -webkit-border-radius:50%;
+    -moz-border-radius:50%;
+    -ms-border-radius:50%;
+    -o-border-radius:50%;
+    background-color: white;
+    border: 2px solid white;
+    outline: 2px solid var(--blue-color);
+    z-index: 1;
+}
+.last-project .project-rows .done::before{
+    background-color: var(--blue-color);
+}
+.last-project .project-rows .current::before{
+   animation: change-color 0.8s infinite alternate;
+   -webkit-animation: change-color 0.8s infinite alternate;
+}
+.last-project .launch-icon {
+    position: absolute;
+    right:0;
+    bottom: 0;
+    width:160px;
+    opacity: 0.2;
+}
+/* End project */
+/* Start Reminder */
+.reminders .item{
+    border-left:2px solid transparent ;
+    padding-left: 15px;
+    margin-left: 35px;
+}
+
+.reminders .item::before{
+    content:"";
+    position: absolute;
+    left:-35px;
+    top:50%;
+    transform: translateY(-50%);
+    width:15px;
+    height:15px;
+    border-radius: 50%;
+    -webkit-transform: translateY(-50%);
+    -moz-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    -o-transform: translateY(-50%);
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+}
+.reminders .blue{
+    border-color:var(--blue-color) ;
+}
+.reminders .blue::before{
+    background-color: var(--blue-color); 
+}
+
+.reminders .green{
+    border-color:var(--green-color) ;
+}
+.reminders .green::before{
+    background-color: var(--green-color); 
+}
+
+.reminders .orange{
+    border-color:var(--orange-color) ;
+}
+.reminders .orange::before{
+    background-color: var(--orange-color); 
+}
+
+.reminders .red{
+    border-color:var(--red-color) ;
+}
+.reminders .red::before{
+    background-color: var(--red-color); 
+}
+/* End Reminder */
+/* Start latest Post  */
+.Post .head img{
+    width:50px;
+    height: 50px;
+    margin-right:15px ;
+}
+.Post .content {
+    border-top:1px solid #eee;
+    border-bottom:1px solid #eee;
+    line-height: 2;
+}
+/* End latest Post  */
+/* Start Social Media  */
+.Social .item{
+    padding-right: 15px ; 
+}
+
+.Social .item p{
+    flex-grow: 1;
+}
+.Social .item i{
+    margin-right: 15px;
+    transition: .3s;
+    -webkit-transition: .3s;
+    -moz-transition: .3s;
+    -ms-transition: .3s;
+    -o-transition: .3s;
+    width:52px;
+}
+.Social .item i:hover{
+    transform: rotate(5deg);
+    -webkit-transform: rotate(5deg);
+    -moz-transform: rotate(5deg);
+    -ms-transform: rotate(5deg);
+    -o-transform: rotate(5deg);
+}
+.Social .item i,
+.Social .item a{
+  cursor: pointer;
+}
+.Social .twitter{
+    color: #1da1f2;
+    background-color:hwb(203 11% 5% / 0.205) ;
+}
+.Social .twitter i,
+.Social .twitter a{
+  background-color: #1da1f2;
+}
+.Social .facebook {
+    color:#1877f2;
+    background-color: hwb(214 9% 5% / 0.205);
+}
+.Social .facebook i,
+.Social .facebook a{
+  background-color:#1877f2;
+}
+.Social .youtube{
+    color:#ff0000;
+    background-color: hsla(0, 100%, 50%, 0.205);
+}
+.Social .youtube i,
+.Social .youtube a{
+  background-color:#ff0000;
+}
+.Social .linkedin{
+    color:#0a66c2;
+    background-color: hsla(210, 90%, 40%, 0.205);
+}
+.Social .linkedin i,
+.Social .linkedin a{
+  background-color:#0a66c2;
+}
+/* End Social Media  */
+/* Start Projects Table  */
+.p-table .response-table{
+    overflow-x: auto;
+}
+.p-table .response-table table{
+    min-width: 1000px;
+    border-spacing: 0;
+}
+.p-table table td{
+    padding: 15px;
+}
+
+.p-table table tbody td{
+    border-bottom: 1px solid #eee;
+    border-left: 1px solid #eee;
+    transition: 0.3s;
+    -webkit-transition: 0.3s;
+    -moz-transition: 0.3s;
+    -ms-transition: 0.3s;
+    -o-transition: 0.3s;
+}
+.p-table table tbody td:last-child{
+    border-right: 1px solid #eee;
+}
+.p-table table img{
+    width: 32px;
+    height:32px;
+    border:2px solid white;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+}
+.p-table table img:not(:first-child){
+    margin-left: -20px;
+}
+.p-table table tbody tr:hover td{
+    background-color: #faf7f7;
+}
+.p-table tbody .label{
+    font-size: 13px;
+    cursor:e-resize;
+}
+/* End Projects Table  */
 /* End Content  */
+/* Start Animation */
+@keyframes change-color{
+    from{
+        background-color: var(--blue-color);
+    }
+    to{
+        background-color: white;
+    }
+}
+/* End Animation */
