@@ -698,6 +698,15 @@ overflow: hidden;
     border-color:#ccc;
 }
 /* End control widget */
+/* Start General widget */
+.setting-page .general-info .email{
+    width:calc( 100% - 80px);
+}
+.setting-page .general-info .email:disabled{
+    background-color: #f0f4f8;
+    color: #bbb;
+}
+/* End General widget */
 /* End Setting page  */
 /* Start Animation */
 @keyframes change-color{
