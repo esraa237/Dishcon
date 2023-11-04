@@ -234,6 +234,9 @@
 .bord1-ccc{
     border:1px solid #ccc;
 }
+.bordb-gray{
+    border-bottom: 1px solid #eee;
+}
 .bord-none{
     border: none;
 }

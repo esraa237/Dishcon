@@ -626,11 +626,11 @@ overflow: hidden;
 /* End Dashbord Page  */
 /* Start Setting page  */
 .setting-page{
-    grid-template-columns: repeat(autofill,minmax(500px,1fr));
+    grid-template-columns: repeat(auto-fill,minmax(500px,1fr));
 }
 @media(max-width: 767px){
     .setting-page{
-        grid-template-columns: repeat(autofill,minmax(100px,1fr));
+        grid-template-columns: repeat(auto-fill,minmax(100px,1fr));
         margin-left: 10px;
         margin-right: 10px;
         gap: 10px;  
