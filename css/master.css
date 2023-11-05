@@ -931,7 +931,7 @@ overflow: hidden;
 .profile-page .info-box .box:hover{
     background-color: #f9f9f9;
 }
-.profile-page .info-box .box div:not(:last-child){
+.profile-page .info-box .box >div{
     min-width: 250px;
 }
 .profile-page .info-box .toggel-switch{
@@ -944,6 +944,11 @@ overflow: hidden;
 }
 .profile-page .info-box .toggel-checkbox:checked + .toggel-switch::before{
     left:60px;
+}
+@media (max-width: 767px){
+    .profile-page .info-box .toggel-switch{
+    margin: auto;
+}
 }
 /* End overview box  */
 /* End Profile page  */
