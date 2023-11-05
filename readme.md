@@ -1,6 +1,6 @@
 > # This Templete from Elzero web school (the fourth templete of Html&Css)
 
->## What I learned or Rememberd from this templetes :
+>## What I have learned or Rememberd from this templetes :
 
 >## HTML
 >### Global Notes
