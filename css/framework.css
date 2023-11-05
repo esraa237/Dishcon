@@ -193,6 +193,9 @@
 .fw-bold{
     font-weight:bold;
 }
+.fw-normal{
+    font-weight: normal;
+}
 /* End Font  */
 /*Start width*/
 .w-full{
