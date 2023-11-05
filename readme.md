@@ -25,4 +25,5 @@
 > #### 4. How to style toggle button
 > #### 5. To hide the main shape of checkbox wee use ```apperance : none``` 
 > #### 6. ```:focus-within``` is for selecting that element's ancestor in the DOM tree ---> use it in (Social Info)
-> 
+> #### 7. making custome checkbox and radio
+> #### 8. to make group radio we put name attr. the same
