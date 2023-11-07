@@ -951,6 +951,19 @@ overflow: hidden;
 }
 }
 /* End overview box  */
+/* Start Other Boxes */
+@media (max-width: 767px){
+    .profile-page .other-boxes{
+    flex-direction: column;
+    } 
+}
+.profile-page .other-boxes .skill-box{
+    flex-grow: 1;
+}
+.profile-page .other-boxes .activities{
+    flex-grow: 2;
+}
+/* End Other Boxes */
 /* End Profile page  */
 
 /* Start Animation */
