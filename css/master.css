@@ -963,6 +963,29 @@ overflow: hidden;
 .profile-page .other-boxes .activities{
     flex-grow: 2;
 }
+@media(max-width: 768px){
+    .profile-page .activities .activity{
+        flex-direction: column;
+    } 
+}
+.profile-page .activities .activity img{
+    height:64px;
+    width: 64px;
+    margin-right: 10px;
+}
+@media(min-width: 768px){
+.profile-page .activities .activity .date{
+    margin-left: auto;
+}
+}
+@media(max-width: 768px){
+    .profile-page .activities .activity .info{
+        margin-bottom: 10px;
+    }  
+    .profile-page .activities .activity img{
+        margin-bottom: 10px;
+    }
+}
 /* End Other Boxes */
 /* End Profile page  */
 
