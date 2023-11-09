@@ -995,6 +995,85 @@ overflow: hidden;
 /* End Other Boxes */
 /* End Profile page  */
 
+/* Start Projects page  */
+.projects-page{
+    grid-template-columns: repeat(auto-fill,minmax(500px,1fr));
+}
+@media(max-width: 767px){
+    .projects-page{
+        grid-template-columns: minmax(100px,1fr);
+        margin-left: 10px;
+        margin-right: 10px;
+        gap: 10px;  
+    }  
+}
+.projects-page .card .date{
+    position:absolute;
+    top:10px;
+    right:10px;
+}
+.projects-page .card .team{
+    position: relative;
+    min-height: 80px;
+}
+.projects-page .card .team .images {
+    position: absolute;
+    left:0;
+    bottom:0;
+}  
+.projects-page .card .team img{
+    height: 40px;
+    width:40px;
+    border: solid 2px white;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+}
+.projects-page .card .team a:not(:first-child){
+    margin-left: -20px;
+}
+.projects-page .card .team img:hover{
+    position: relative;
+    z-index: 100;
+}
+.projects-page .card .work{
+    border-top: solid 1px #eee;
+    margin-top: 15px;
+    justify-content: end;
+}
+@media(max-width: 767px){
+    .projects-page .card .work{
+        flex-direction: column;
+        gap:10px;
+    }
+}
+@media (max-width: 767px){
+    .projects-page .card .footer{
+        flex-direction: column;
+    }
+}
+.projects-page .card .progress{
+    width:230px;
+    height:8px; 
+}
+@media (max-width: 767px){
+    .projects-page .card .progress{
+    margin-bottom: 15px;
+    }
+}
+.projects-page .card .progress span{
+    position: absolute;
+    left:0;
+    border-radius: 10px;
+    height:100%;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+}
+/* End Projects page  */
 /* Start Animation */
 @keyframes change-color{
     from{
