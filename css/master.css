@@ -972,6 +972,11 @@ overflow: hidden;
     height:64px;
     width: 64px;
     margin-right: 10px;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
 }
 @media(min-width: 768px){
 .profile-page .activities .activity .date{
@@ -980,10 +985,11 @@ overflow: hidden;
 }
 @media(max-width: 768px){
     .profile-page .activities .activity .info{
-        margin-bottom: 10px;
+        margin-bottom: 15px;
     }  
     .profile-page .activities .activity img{
-        margin-bottom: 10px;
+        margin-bottom: 15px;
+        margin-right: 0;
     }
 }
 /* End Other Boxes */
