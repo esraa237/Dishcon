@@ -1146,6 +1146,9 @@ overflow: hidden;
     height:100px;
     margin-top:10px;
 }
+.friends-page .icons i{
+    margin-right:5px;
+}
 .friends-page .icons .vip{
     position: absolute;
     right:10px;
