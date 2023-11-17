@@ -1163,6 +1163,47 @@ overflow: hidden;
     -o-transform: translateY(-50%);
 }
 /* End friends page  */
+/* Start files page  */
+.files-page{
+   
+}
+@media(max-width: 767px){
+    .files-page{
+        flex-direction: column-reverse;
+        margin-left: 10px;
+        margin-right: 10px;
+    }  
+}
+.files-page .files{
+    flex:1;
+    grid-template-columns: repeat(auto-fill,minmax(250px,1fr));
+}
+@media(max-width: 767px){
+    .files-page .files{
+        grid-template-columns: minmax(100px,1fr);
+        gap:10px;
+    }  
+}
+.files-page .file>i{
+    position: absolute;
+}
+.files-page .file img{
+    width:64px;
+    height:64px;
+    transition: 0.3s;
+    -webkit-transition: 0.3s;
+    -moz-transition: 0.3s;
+    -ms-transition: 0.3s;
+    -o-transition: 0.3s;
+}
+.files-page .file:hover img{
+    transform: rotate(5deg);
+    -webkit-transform: rotate(5deg);
+    -moz-transform: rotate(5deg);
+    -ms-transform: rotate(5deg);
+    -o-transform: rotate(5deg);
+}
+/* End files page  */
 /* Start Animation */
 @keyframes change-color{
     from{
