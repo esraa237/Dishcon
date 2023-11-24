@@ -1165,44 +1165,87 @@ overflow: hidden;
 /* End friends page  */
 /* Start files page  */
 .files-page{
-   
-}
-@media(max-width: 767px){
-    .files-page{
-        flex-direction: column-reverse;
-        margin-left: 10px;
-        margin-right: 10px;
-    }  
-}
-.files-page .files{
-    flex:1;
-    grid-template-columns: repeat(auto-fill,minmax(250px,1fr));
-}
-@media(max-width: 767px){
-    .files-page .files{
-        grid-template-columns: minmax(100px,1fr);
-        gap:10px;
-    }  
-}
-.files-page .file>i{
-    position: absolute;
-}
-.files-page .file img{
-    width:64px;
-    height:64px;
-    transition: 0.3s;
-    -webkit-transition: 0.3s;
-    -moz-transition: 0.3s;
-    -ms-transition: 0.3s;
-    -o-transition: 0.3s;
-}
-.files-page .file:hover img{
-    transform: rotate(5deg);
-    -webkit-transform: rotate(5deg);
-    -moz-transform: rotate(5deg);
-    -ms-transform: rotate(5deg);
-    -o-transform: rotate(5deg);
-}
+    align-items: flex-start;
+ }
+ @media(max-width: 767px){
+     .files-page{
+         flex-direction: column-reverse;
+         margin-left: 10px;
+         margin-right: 10px;
+         align-items: normal;
+     }  
+ }
+ .files-page .files{
+     flex:1;
+     grid-template-columns: repeat(auto-fill,minmax(210px,1fr));
+ }
+ @media(max-width: 767px){
+     .files-page .files{
+         grid-template-columns: minmax(100px,1fr);
+         gap:10px;
+     }  
+ }
+ .files-page .file>i{
+     position: absolute;
+ }
+ .files-page .file img{
+     width:64px;
+     height:64px;
+     transition: 0.3s;
+     -webkit-transition: 0.3s;
+     -moz-transition: 0.3s;
+     -ms-transition: 0.3s;
+     -o-transition: 0.3s;
+ }
+ .files-page .file:hover img{
+     transform: rotate(5deg);
+     -webkit-transform: rotate(5deg);
+     -moz-transform: rotate(5deg);
+     -ms-transform: rotate(5deg);
+     -o-transform: rotate(5deg);
+ }
+ 
+ /* Start update  */
+ 
+ .files-page .file-card{
+    min-width:280px;
+ }
+ .files-page .file-card .box>i{
+     width: 40px;
+     height: 40px;
+     margin-right: 10px;
+ }
+ .files-page .file-card .size{
+     margin-left: auto;
+ }
+ .files-page .file-card .blue{
+     background-color:hsla(212, 100%, 50%, 0.2);
+ }
+ .files-page .file-card .red{
+     background-color:hsla(0, 100%, 50%, 0.205);
+ }
+ .files-page .file-card .orange{
+     background-color: hsla(37, 92%, 50%, 0.205) ;
+ }
+ .files-page .file-card .green{
+     background-color: rgba(33, 196, 93, 0.199);
+ }
+ .files-page .file-card .btn{
+     padding:10px 15px;
+     margin: auto;
+     transition: 0.3s;
+     -webkit-transition: 0.3s;
+     -moz-transition: 0.3s;
+     -ms-transition: 0.3s;
+     -o-transition: 0.3s;
+ }
+ .files-page .file-card .btn:hover{
+     background-color: var(--blue-alt-color);
+ }
+ .files-page .file-card .btn:hover i{
+     animation: up-down 0.8s infinite;
+     -webkit-animation: up-down 0.8s infinite;
+ }
 /* End files page  */
 /* Start Animation */
 @keyframes change-color{
